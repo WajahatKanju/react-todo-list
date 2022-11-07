@@ -22,9 +22,15 @@
 }
 
 .complete{
+  width: fit-content;
   color: #DDD;
   animation: color-Change  0.65s ease 0.2s 1 forwards alternate;
   position: relative;
+}
+
+.hidden{
+  transition: 0.5s;
+  opacity: 0;
 }
 
 .complete::after{

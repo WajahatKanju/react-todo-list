@@ -3,7 +3,9 @@
   padding: 1rem 2rem;
   margin-inline: auto;
 
-  max-width: 50%;
+  min-width: 30rem;
+  max-width: 60rem;
+
   border: 3px solid #222;
 }
 
@@ -20,31 +22,22 @@
 }
 
 .todo-list input:hover{
-  border-bottom: 2px solid rgb(31, 132, 31);
+  border-bottom: 1px solid #2594b6;
 }
 
 .todo-list input:focus{
   outline: none;
-  border-bottom: 3px solid rgb(9, 254, 9);
+  border-bottom: 3px solid #5cd5fa;
 }
 
-.todo-list input:required{
+.todo-list input[type='text']:valid{
   outline: none;
   border-bottom: 3px solid rgb(9, 254, 9);
 }
 
-.todo-list input:invalid{
-  outline: none;
-  border-bottom: 3px solid rgb(254, 9, 9);
+.todo-list input:disabled{
+  color: #333;
+  display: block;
+  position: relative;
 }
 
-
-
-
-.check{
-  font-size: 2rem;
-  width: 5rem;
-  height: 5rem;
-
-  background-image: url('./static/clock.gif');
-}
