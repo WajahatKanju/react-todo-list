@@ -1,0 +1,50 @@
+.todo-list{
+  margin: 2rem 4rem;
+  padding: 1rem 2rem;
+  margin-inline: auto;
+
+  max-width: 50%;
+  border: 3px solid #222;
+}
+
+.todo-list input {
+  color: #DDD;
+  background-color: #222;
+  margin: 2rem 0;
+  border-style: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-bottom: 2px solid gray;
+  width: 100%;
+
+}
+
+.todo-list input:hover{
+  border-bottom: 2px solid rgb(31, 132, 31);
+}
+
+.todo-list input:focus{
+  outline: none;
+  border-bottom: 3px solid rgb(9, 254, 9);
+}
+
+.todo-list input:required{
+  outline: none;
+  border-bottom: 3px solid rgb(9, 254, 9);
+}
+
+.todo-list input:invalid{
+  outline: none;
+  border-bottom: 3px solid rgb(254, 9, 9);
+}
+
+
+
+
+.check{
+  font-size: 2rem;
+  width: 5rem;
+  height: 5rem;
+
+  background-image: url('./static/clock.gif');
+}

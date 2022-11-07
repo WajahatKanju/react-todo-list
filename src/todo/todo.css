@@ -1,0 +1,105 @@
+.todo{
+  margin: 1rem 0;
+  padding: 0.5rem 0.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  letter-spacing: 0.1ch;
+  font-size: 2rem;
+
+  width: 100%;
+
+  /* border: 2px solid red; */
+
+}
+
+.todo-functions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.complete{
+  color: #DDD;
+  animation: color-Change  0.65s ease 0.2s 1 forwards alternate;
+  position: relative;
+}
+
+.complete::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+
+  background-color: #888;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  animation: stroke 0.65s ease 0.2s 1 forwards alternate;
+}
+
+@keyframes stroke {
+
+  to{
+    background-color: #FFF;
+    width: 100%;
+  }
+}
+
+@keyframes color-Change {
+  0%{
+    color: #DDD;
+  }
+
+  40%{
+    color: #AAA;
+  }
+  100%{
+    color: #888;
+  }
+}
+
+.btn{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  border-style: none;
+  font-size: 2rem;
+  background-color: rgb(51, 51, 51);
+}
+
+
+.dull{
+  animation: dull 0.65s ease 0.2s 1 forwards alternate;
+  
+}
+
+@keyframes dull {
+  to{
+    color: #666
+  }
+}
+
+
+.btn-check {
+  color: #CCC
+}
+
+
+.checked{
+  animation: checked 0.65s ease 0.2s 1 forwards alternate;
+}
+
+@keyframes checked {
+  to{
+    color: #09fe09
+  }
+}
+
+
+
+.btn-delete{
+  color: #D00;
+}
